@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijesh M - Python Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="canvas-container"></div>
+    
+    <div class="code-background"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">VM</span>
+                <span class="python-logo"><i class="fab fa-python"></i></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--<section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="code-snippet">
+                <pre>
+                <code>
+                <span class="keyword">
+                class</span> <span class="class-name">Developer</span>:
+                        <span class="keyword">def</span> <span class="function">__init__</span>(<span class="keyword">self</span>):
+                                <span class="keyword">self</span>.name = <span class="string">"VIJESH M"</span>
+                                    <span class="keyword">self</span>.role = <span class="string">"Python Web Developer"</span>
+                                <span class="keyword">self</span>.skills = [<span class="string">"Django"</span>, <span class="string">"Flask"</span>, <span class="string">"AI/ML"</span>, <span class="string">"Full Stack"</span>]
+                                        
+                        <span class="keyword">def</span> <span class="function">introduce</span>(<span class="keyword">self</span>):
+                            <span class="keyword">return</span> <span class="string">f"Hello, I'm {self.name}"</span>
+                    
+                    me = <span class="function">Developer</span>()
+                    <span class="keyword">print</span>(me.<span class="function">introduce</span>())
+                    </code>
+                </pre>
+                </div>
+                <h1 class="glitch" data-text="VIJESH M">VIJESH M</h1>
+                <h2 class="animate-text gradient-text">Python Web Developer</h2>
+                <p class="animate-text">Building robust web applications with Python & modern frameworks</p>
+                <div class="hero-buttons animate-fade">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+                <div class="social-icons animate-fade">
+                    <a href="https://www.linkedin.com/in/vijesh-m-59637a199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vijeshmperumbala" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section> 
+    -->
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="filename">developer.py</span>
+                        <button class="copy-btn" title="Copy code"><i class="far fa-copy"></i></button>
+                    </div>
+                    <pre><code id="typing-code" style="width:0;">
+<span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="keyword">self</span>):
+        <span class="keyword">self</span>.name = <span class="string">"VIJESH M"</span>
+        <span class="keyword">self</span>.role = <span class="string">"Python Web Developer"</span>
+        <span class="keyword">self</span>.skills = [<span class="string">"Django"</span>, <span class="string">"Flask"</span>, <span class="string">"AI/ML"</span>, <span class="string">"Full Stack"</span>]
+                    
+    <span class="keyword">def</span> <span class="function">introduce</span>(<span class="keyword">self</span>):
+        <span class="keyword">return</span> <span class="string">f"Hello, I'm {self.name}"</span>
+
+me = <span class="function">Developer</span>()
+<span class="keyword">print</span>(me.<span class="function">introduce</span>())
+                    </code></pre>
+                    <div class="code-output">
+                        <span class="output-prompt">>>> </span><span class="output-text">Hello, I'm VIJESH M</span>
+                    </div>
+                </div>
+                <h1 class="glitch" data-text="VIJESH M">VIJESH M</h1>
+                <h2 class="animate-text gradient-text">Python Web Developer</h2>
+                <p class="animate-text">Building robust web applications with Python & modern frameworks</p>
+                <div class="hero-buttons animate-fade">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+                <div class="social-icons animate-fade">
+                    <a href="https://www.linkedin.com/in/vijesh-m-59637a199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vijeshmperumbala" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="file-name">about_me.py</span>
+                        </div>
+                        <div class="code-content">
+                            <p>Experienced Python developer specializing in web applications and AI integration. I transform client requirements into robust software solutions with Django, Flask, and other Python frameworks. My focus is on creating scalable, maintainable code that solves real business problems.</p>
+                            <p>With a strong foundation in software development lifecycle and agile methodologies, I excel at both backend architecture and frontend implementation.</p>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Vijesh M</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">vijeshmperumbala31@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">+97474025375, +919496705135</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Perumbala, Kasaragod, Kerala, 671317</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Nationality:</span>
+                            <span class="info-value">Indian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-stack-icons">
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fab fa-js" title="JavaScript"></i>
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-docker" title="Docker"></i>
+            <i class="fab fa-github" title="GitHub"></i>
+            <i class="fas fa-database" title="Databases"></i>
+            <!-- <i class="fas fa-flutter" title="Flutter"></i> -->
+            <i class="fa-brands fa-flutter" title="Flutter"></i>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Convibe Technologies WLL</h4>
+                        <p class="timeline-date">Jun 2022 - Present</p>
+                        <ul class="timeline-details">
+                            <li>Developed full-stack applications using Django, leveraging JavaScript, HTML, and CSS for dynamic front-end components.</li>
+                            <li>Guided development teams on Python best practices.</li>
+                            <li>Implemented Django and Flask frameworks for scalable web application development.</li>
+                            <li>Developed robust software modules with proper testing and detailed documentation.</li>
+                            <li>Designed and implemented RESTful APIs with seamless integration to PostgreSQL and MySQL databases, optimizing data retrieval and storage.</li>
+                            <li>Crafted responsive, cross-browser compatible user interfaces using modern JavaScript frameworks and CSS preprocessors</li>
+                            <li>Integrating third-party APIs and services into Python applications.</li>
+                            <li>Enhanced code quality through rigorous code reviews, refactoring, and adherence to PEP 8 standards.</li>
+                        </ul>
+                        <div class="project-note">
+                            <h5>Key Project: Amoeba</h5>
+                            <p>Developed a responsive estimation and quotation system for Altech Aluminium and Steel WLL, using Django and PostgreSQL, featuring real-time cost calculations, version tracking, project dashboards, and customizable PDF invoicing.</p>
+                        </div>
+                        <div class="project-note">
+                            <h5>Key Project: Spider</h5>
+                            <p>Designed and developed the backend for an employee activity monitoring system with Django and PostgreSQL, enabling real-time logging, WhatsApp notifications, PDF report generation, and a dynamic web interface.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Junior Software Engineer</h3>
+                        <h4>Aventus Informatics LLP</h4>
+                        <p class="timeline-date">Jun 2021 - Jun 2022</p>
+                        <ul class="timeline-details">
+                            <li>Developed and tested Python software modules with thorough documentation.</li>
+                            <li>Built full-stack applications using Django, JavaScript, HTML, and CSS.</li>
+                            <li>Implemented RESTful APIs with PostgreSQL and MySQL database integrations.</li>
+                            <li>Created responsive user interfaces with JavaScript, HTML, and CSS.</li>
+                            <li>Worked in Agile teams, using Git for version control.</li>
+                            <li>Improved code quality through code reviews and feedback implementation.</li>
+                            <li>Worked on Spider project for employee activity tracking and reporting.</li>
+                        </ul>
+                        <div class="project-note">
+                            <h5>Key Project: Zajel</h5>
+                            <p>Zajel is a food delivery app built with Flutter for cross-platform UI, Python for backend logic, and PostgreSQL for data management, enabling users to order from nearby or favorite restaurants with ease.</p>
+                        </div>
+                        <div class="project-note">
+                            <h5>Key Project: Skilled worker management system</h5>
+                            <p>Skilled Worker is a mobile app offering a wide range of technical services, including plumbing, repairing, welding, and electrical work. Users can register, book services, and connect with verified, skilled workers who provide services across residential, industrial, and commercial sectors based on availability at their location.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Junior AI Developer</h3>
+                        <h4>Strokx Technologies</h4>
+                        <p class="timeline-date">Oct 2020 - Jun 2021</p>
+                        <ul class="timeline-details">
+                            <li>Developed and tested AI/ML models using Python libraries such as TensorFlow and PyTorch.</li>
+                            <li>Built basic models for data analysis, prediction, and classification tasks.</li>
+                            <li>Designed and implemented data processing pipelines using NumPy, Pandas, and scikit-learn.</li>
+                            <li>Conducted data cleaning, preprocessing, and feature engineering to enhance model performance.</li>
+                            <li>Created data visualizations to present insights from analytical models.</li>
+                            <li>Collaborated with the data science team to improve model accuracy and efficiency.</li>
+                            <li>Assisted in deploying machine learning models to production environments.</li>
+                        </ul>
+                        <div class="project-note">
+                            <h5>Key Project: Face Recognition Based Attendance System</h5>
+                            <p>Developed a machine learning-based attendance system using face recognition with OpenCV, dlib, and Python. Automated attendance tracking, integrated with a database, and generated detailed reports using Pandas and Matplotlib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Experience Section -->
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                        <h4>APJ Abdul Kalam Technological University</h4>
+                        <p class="timeline-date">2016 - 2020</p>
+                        <p>GPA: 6.63</p>
+                        <p>Focused on programming fundamentals, data structures, algorithms, and web development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Education in Science</h3>
+                        <h4>GHSS Chemnad, Kasaragod</h4>
+                        <p class="timeline-date">2014 - 2016</p>
+                        <p>Percentage: 70%</p>
+                        <p>Concentrated on mathematics, physics and computer science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Education Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Python Ecosystem</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python <i class="fab fa-python"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Django</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Flask</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>FastAPI</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQLAlchemy</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>NumPy/Pandas</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>scikit-learn</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TensorFlow</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Data Analysis</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML/CSS <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript <i class="fab fa-js"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>RESTful APIs</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bootstrap</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React <i class="fab fa-react"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Docker <i class="fab fa-docker"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git/GitHub <i class="fab fa-github"></i></span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-badges">
+            <div class="badge python">
+                Python
+                <i class="fab fa-python"></i>
+            </div>
+            <div class="badge django">Django</div>
+            <div class="badge js">
+                JavaScript
+                <i class="fab fa-js "></i>
+            </div>
+            <div class="badge flask">
+                Flask
+                <i class="fab fa-flask"></i>
+            </div>
+            <div class="badge ai">
+                AI/ML
+                <i class="fas fa-brain"></i>
+            </div>
+            <div class="badge db">SQL
+                <i class="fas fa-database"></i>
+            </div>
+            <div class="badge rest">REST API
+                <!-- <i class="fas fa-network-wired"></i> -->
+            </div>
+            <div class="badge react">React
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="badge docker">Docker
+                <i class="fab fa-docker"></i>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Python Projects</h2>
+            <div class="project-cards scroll-x" >
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fab fa-python"></i>
+                            <h3>Amoeba</h3>
+                        </div>
+                        <h4>Aluminium and Infill Estimation Software</h4>
+                        <p class="project-date">Jun 2022 - Nov 2023</p>
+                        <p class="project-description">
+                            A comprehensive Django application for estimation and quotation preparation. This in-house project was built for Altech Aluminium and Steel WLL, Qatar.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Built with <span class="highlight">Django</span> and <span class="highlight">PostgreSQL</span></li>
+                            <li>Achieved 95% accuracy in measurement and pricing calculations using Python.</li>
+                            <li>Implemented automated document generation with <span class="highlight">Wkhtmltopdf</span></li>
+                            <li>Integrated approval workflow system with email notifications</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-spider"></i>
+                            <h3>Spider</h3>
+                        </div>
+                        <h4>Employee Work Tracking System</h4>
+                        <p class="project-date">Aug 2023 - March 2024</p>
+                        <p class="project-description">
+                            A Django-based application for tracking employee work progress and daily activity logging with comprehensive reporting.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Developed with <span class="highlight">Django</span> and <span class="highlight">PostgreSQL</span> for ORM</li>
+                            <li>Implemented real-time notifications with <span class="highlight">Django-Channels</span></li>
+                            <li>Created analytics dashboard with <span class="highlight">Chart.js</span></li>
+                            <li>Led the entire back-end development with Python</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-user-nurse"></i>
+                            <h3>Skilled Worker</h3>
+                        </div>
+                        <h4>Skilled worker management system</h4>
+                        <p class="project-date">Jun 2021 - Nov 2021</p>
+                        <p class="project-description">
+                            Skilled Worker is a mobile app offering a wide range of technical services to clients.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Built with <span class="highlight">Django</span> and <span class="highlight">PostgreSQL</span></li>
+                            <li>Google Auth and JWT for authentication</li>
+                            <li>Implemented real-time notifications with <span class="highlight">Django-Channels</span></li>
+                            <li>Led the entire back-end development with <span class="highlight">Python</span></li>
+                            <li>Front-end development with <span class="highlight">Flutter</span></li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>JavaScript</span>
+                            <span>JWT</span>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Zajel</h3>
+                        </div>
+                        <h4>Food Delivery Application</h4>
+                        <p class="project-date">Oct 2020 - Jun 2021</p>
+                        <p class="project-description">
+                            Zajel is a cross-platform food delivery app allowing users to easily order food from nearby or favorite restaurants.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Developed with <span class="highlight">Flutter</span> for cross-platform UI</li>
+                            <li>Backend built using <span class="highlight">Python</span> (Django/Flask)</li>
+                            <li>Data management with <span class="highlight">PostgreSQL</span></li>
+                            <li>Implemented real-time order tracking</li>
+                            <li>Integrated secure payment gateway for seamless transactions</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>JavaScript</span>
+                            <span>Real-time</span>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+        <div class="code-rain"></div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>vijeshmperumbala31@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+97474025375</p>
+                            <p>+919496705135</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Perumbala, Kasaragod, Kerala, 671317</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h3>Social Profiles</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/vijesh-m-59637a199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/vijeshmperumbala" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span>terminal@vijesh:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-text">$ python send_message.py</div>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">name = </label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">email = </label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">subject = </label>
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">message = """</label>
+                                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                    <span>"""</span>
+                                </div>
+                                <button type="submit" class="btn primary-btn terminal-btn">
+                                    <span class="terminal-prompt">$ </span>
+                                    submit_message()
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Crafted with <i class="fas fa-heart"></i> and <i class="fab fa-python"></i> by Vijesh M</p>
+                    <p>&copy; 2025 All Rights Reserved.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vijesh-m-59637a199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vijeshmperumbala" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- EmailJS for form submissions -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    
+    <!-- Three.js extensions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <script src="three-background.js"></script>
+    <script src="email.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
